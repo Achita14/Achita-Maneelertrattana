@@ -1,0 +1,3022 @@
+/* =========================================================
+DISASTER PREPAREDNESS WEBSITE
+MODERN DECORATED STYLE
+========================================================= */
+
+
+/* =========================================================
+1. RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #222;
+
+    line-height: 1.7;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(255, 87, 34, 0.08) 0,
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(183, 28, 28, 0.08) 0,
+            transparent 25%
+        ),
+
+        #f4f7f9;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+2. HEADER
+========================================================= */
+
+header {
+    position: relative;
+
+    background:
+        linear-gradient(
+            135deg,
+            #8e0000,
+            #c62828 50%,
+            #e65100
+        );
+
+    color: white;
+
+    padding: 22px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.2);
+
+    overflow: hidden;
+}
+
+
+header::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    top: -100px;
+    right: 10%;
+}
+
+
+header::after {
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+
+    border: 20px solid rgba(255, 255, 255, 0.05);
+
+    bottom: -80px;
+    left: 25%;
+}
+
+
+header h1 {
+    position: relative;
+
+    z-index: 2;
+
+    font-size: 25px;
+
+    letter-spacing: 0.5px;
+
+    text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================================
+3. NAVIGATION
+========================================================= */
+
+nav {
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    gap: 6px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    padding: 9px 14px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+nav a:focus {
+    outline: 2px solid white;
+}
+
+
+/* =========================================================
+4. MAIN
+========================================================= */
+
+main {
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    padding: 55px 25px;
+}
+
+
+/* =========================================================
+5. SECTIONS
+========================================================= */
+
+section {
+    position: relative;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    padding: 35px;
+
+    margin-bottom: 35px;
+
+    border-radius: 16px;
+
+    border: 1px solid rgba(0, 0, 0, 0.05);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.07);
+
+    overflow: hidden;
+}
+
+
+section::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #b71c1c,
+            #e65100,
+            #ff9800
+        );
+}
+
+
+section h2 {
+    color: #a71919;
+
+    margin-bottom: 15px;
+
+    font-size: 29px;
+
+    position: relative;
+}
+
+
+section h2::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 4px;
+
+    background: #e65100;
+
+    border-radius: 5px;
+
+    margin-top: 7px;
+}
+
+
+section h3 {
+    margin-bottom: 10px;
+}
+
+
+section h4 {
+    color: #d84315;
+
+    margin-top: 15px;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+6. HERO
+========================================================= */
+
+.hero {
+    position: relative;
+
+    min-height: 480px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 30px;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7f0000 0%,
+            #b71c1c 35%,
+            #e65100 70%,
+            #ff9800 100%
+        );
+
+    box-shadow:
+        0 18px 40px rgba(139, 0, 0, 0.28);
+}
+
+
+/* Large decorative circle */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    border-radius: 50%;
+
+    right: -120px;
+    top: -180px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 255, 255, 0.18) 0%,
+            rgba(255, 255, 255, 0.06) 45%,
+            transparent 70%
+        );
+
+    box-shadow:
+        0 0 0 40px rgba(255,255,255,0.03),
+        0 0 0 80px rgba(255,255,255,0.025);
+
+    z-index: 0;
+}
+
+
+/* Bottom decorative circle */
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    left: -120px;
+    bottom: -170px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 193, 7, 0.25),
+            rgba(255, 152, 0, 0.08) 55%,
+            transparent 70%
+        );
+
+    z-index: 0;
+}
+
+
+/* =========================================================
+7. HERO DISASTER ICONS
+========================================================= */
+
+.hero-decorations {
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+.hero-decorations span {
+    position: absolute;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    backdrop-filter: blur(4px);
+
+    font-size: 32px;
+
+    opacity: 0.75;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+
+    animation:
+        floatIcon 5s ease-in-out infinite;
+}
+
+
+/* Icon positions */
+
+.hero-decorations span:nth-child(1) {
+    top: 18%;
+    left: 8%;
+}
+
+
+.hero-decorations span:nth-child(2) {
+    bottom: 15%;
+    left: 17%;
+
+    animation-delay: 1s;
+}
+
+
+.hero-decorations span:nth-child(3) {
+    top: 20%;
+    right: 12%;
+
+    animation-delay: 2s;
+}
+
+
+.hero-decorations span:nth-child(4) {
+    bottom: 18%;
+    right: 20%;
+
+    animation-delay: 3s;
+}
+
+
+.hero-decorations span:nth-child(5) {
+    bottom: 8%;
+    right: 5%;
+
+    animation-delay: 4s;
+}
+
+
+/* Floating animation */
+
+@keyframes floatIcon {
+    0%,
+    100% {
+        transform:
+            translateY(0)
+            rotate(0deg);
+    }
+
+    50% {
+        transform:
+            translateY(-12px)
+            rotate(4deg);
+    }
+}
+
+
+/* =========================================================
+8. HERO TEXT
+========================================================= */
+
+.hero h2,
+.hero p,
+.hero a {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.hero h2 {
+    color: #ffffff;
+
+    font-size: clamp(36px, 6vw, 58px);
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+
+    text-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Hero underline */
+
+.hero h2::after {
+    content: "";
+
+    display: block;
+
+    width: 90px;
+
+    height: 5px;
+
+    margin: 15px auto 0;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffd54f,
+            #ff9800
+        );
+}
+
+
+.hero p {
+    max-width: 720px;
+
+    margin: 0 auto 35px;
+
+    color: rgba(255, 255, 255, 0.95);
+
+    font-size: 19px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+9. BUTTONS
+========================================================= */
+
+.hero a,
+section > a {
+    display: inline-block;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #fff3e0
+        );
+
+    color: #b71c1c;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    border: 2px solid rgba(255, 255, 255, 0.5);
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.18);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.hero a:hover,
+section > a:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 9px 20px rgba(0, 0, 0, 0.25);
+
+    background: white;
+}
+
+
+/* =========================================================
+10. CARDS
+========================================================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+
+    background: transparent;
+
+    box-shadow: none;
+
+    padding: 0;
+
+    border: none;
+}
+
+
+.cards::before {
+    display: none;
+}
+
+
+.card {
+    position: relative;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #fafafa
+        );
+
+    border: 1px solid #e6e6e6;
+
+    border-radius: 16px;
+
+    padding: 28px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.07);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+
+    background: rgba(230, 81, 0, 0.05);
+
+    right: -30px;
+    bottom: -30px;
+}
+
+
+.card:hover {
+    transform: translateY(-8px);
+
+    border-color: #ffccbc;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+.card h3 {
+    position: relative;
+
+    z-index: 2;
+
+    color: #b71c1c;
+
+    font-size: 21px;
+}
+
+
+.card p,
+.card h4 {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+11. CARD LINKS
+========================================================= */
+
+.card a {
+    position: relative;
+
+    z-index: 3;
+
+    display: inline-block;
+
+    margin-top: 12px;
+
+    color: #d84315;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    border-bottom: 2px solid transparent;
+
+    transition:
+        border-color 0.2s ease;
+}
+
+
+.card a:hover {
+    border-bottom-color: #d84315;
+}
+
+
+/* =========================================================
+12. EMERGENCY KIT
+========================================================= */
+
+.checklist {
+    list-style: none;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 12px;
+
+    margin-top: 20px;
+
+    padding: 0;
+}
+
+
+.checklist li {
+    background:
+        linear-gradient(
+            90deg,
+            #fff8f5,
+            #ffffff
+        );
+
+    border-left: 5px solid #e65100;
+
+    padding: 13px 16px;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.checklist li:hover {
+    transform: translateX(5px);
+
+    background-color: #fff3e0;
+}
+
+
+.checklist label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    cursor: pointer;
+
+    width: 100%;
+}
+
+
+.checklist input[type="checkbox"] {
+    appearance: none;
+
+    width: 21px;
+    height: 21px;
+
+    border: 2px solid #b71c1c;
+
+    border-radius: 5px;
+
+    background-color: white;
+
+    cursor: pointer;
+
+    position: relative;
+
+    flex-shrink: 0;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.checklist input[type="checkbox"]:hover {
+    border-color: #e65100;
+
+    transform: scale(1.08);
+}
+
+
+.checklist input[type="checkbox"]:checked {
+    background:
+        linear-gradient(
+            135deg,
+            #1e7217,
+            #3c9b2f
+        );
+
+    border-color: #021a0a;
+}
+
+
+.checklist input[type="checkbox"]:checked::after {
+    content: "✓";
+
+    position: absolute;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    left: 3px;
+
+    top: -1px;
+}
+
+
+.checklist li:has(input:checked) {
+    background-color: #f1f8f1;
+
+    border-left-color: #52a043;
+
+    color: #555;
+}
+
+
+.checklist li:has(input:checked) label {
+    text-decoration: line-through;
+
+    text-decoration-color: #000000;
+}
+
+
+/* =========================================================
+13. TIPS
+========================================================= */
+
+.tips {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+
+    background: transparent;
+
+    box-shadow: none;
+
+    padding: 0;
+
+    border: none;
+}
+
+
+.tips::before {
+    display: none;
+}
+
+
+/* =========================================================
+14. WARNING CARDS
+========================================================= */
+
+.warning-red {
+    border-left: 7px solid #d32f2f;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffebee,
+            #ffffff
+        );
+}
+
+
+.warning-orange {
+    border-left: 7px solid #f57c00;
+
+    background:
+        linear-gradient(
+            90deg,
+            #fff3e0,
+            #ffffff
+        );
+}
+
+
+.warning-yellow {
+    border-left: 7px solid #fbc02d;
+
+    background:
+        linear-gradient(
+            90deg,
+            #fffde7,
+            #ffffff
+        );
+}
+
+
+/* =========================================================
+15. DISASTER CARD COLORS
+========================================================= */
+
+.typhoon-card {
+    border-top: 6px solid #283593;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f3f5ff,
+            #e8eaf6
+        );
+}
+
+
+.typhoon-card h3 {
+    color: #283593;
+}
+
+
+.typhoon-card h4 {
+    color: #3949ab;
+}
+
+
+.flood-card {
+    border-top: 6px solid #0288d1;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f0faff,
+            #e1f5fe
+        );
+}
+
+
+.flood-card h3 {
+    color: #0277bd;
+}
+
+
+.flood-card h4 {
+    color: #0288d1;
+}
+
+
+.volcano-card {
+    border-top: 6px solid #8e0000;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fff3f3,
+            #ffebee
+        );
+}
+
+
+.volcano-card h3 {
+    color: #8e0000;
+}
+
+
+.volcano-card h4 {
+    color: #c62828;
+}
+
+
+.tsunami-card {
+    border-top: 6px solid #00897b;
+
+    background:
+        linear-gradient(
+            145deg,
+            #effffb,
+            #e0f2f1
+        );
+}
+
+
+.tsunami-card h3 {
+    color: #00796b;
+}
+
+
+.tsunami-card h4 {
+    color: #00897b;
+}
+
+
+.blizzard-card {
+    border-top: 6px solid #5c6bc0;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f5f8ff,
+            #e8eaf6
+        );
+}
+
+
+.blizzard-card h3 {
+    color: #3949ab;
+}
+
+
+.blizzard-card h4 {
+    color: #5c6bc0;
+}
+
+
+.drought-card {
+    border-top: 6px solid #a67c00;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fffdf2,
+            #fff8e1
+        );
+}
+
+
+.drought-card h3 {
+    color: #8d6e00;
+}
+
+
+.drought-card h4 {
+    color: #a67c00;
+}
+
+
+.wildfire-card {
+    border-top: 6px solid #e64a19;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fff7f2,
+            #ffebee
+        );
+}
+
+
+.wildfire-card h3 {
+    color: #d84315;
+}
+
+
+.wildfire-card h4 {
+    color: #e65100;
+}
+
+
+.earthquake-card {
+    border-top: 6px solid #795548;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fff8f2,
+            #efebe9
+        );
+}
+
+
+.earthquake-card h3 {
+    color: #795548;
+}
+
+
+.earthquake-card h4 {
+    color: #a0522d;
+}
+
+
+/* =========================================================
+16. DISASTER CARD ALARM
+========================================================= */
+
+.disaster-cards .card {
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.disaster-cards .card::before {
+    content: "🚨";
+
+    position: absolute;
+
+    top: 15px;
+    right: 18px;
+
+    font-size: 24px;
+
+    opacity: 0;
+
+    transform:
+        scale(0.5)
+        rotate(-10deg);
+
+    pointer-events: none;
+
+    z-index: 5;
+}
+
+
+.disaster-cards .card:hover::before {
+    animation:
+        disasterAlarm 1.2s ease-in-out;
+}
+
+
+@keyframes disasterAlarm {
+
+    0% {
+        opacity: 0;
+
+        transform:
+            scale(0.5)
+            rotate(-10deg);
+    }
+
+    15% {
+        opacity: 1;
+
+        transform:
+            scale(1.05)
+            rotate(8deg);
+    }
+
+    25% {
+        transform:
+            scale(1)
+            rotate(-7deg);
+    }
+
+    35% {
+        transform:
+            scale(1.05)
+            rotate(6deg);
+    }
+
+    45% {
+        transform:
+            scale(1)
+            rotate(-4deg);
+    }
+
+    60% {
+        opacity: 1;
+
+        transform:
+            scale(1)
+            rotate(0deg);
+    }
+
+    100% {
+        opacity: 0;
+
+        transform:
+            scale(0.9)
+            rotate(0deg);
+    }
+}
+
+
+/* =========================================================
+17. TYPES OF DISASTERS
+========================================================= */
+
+.disaster-types {
+    position: relative;
+
+    min-height: 500px;
+
+    padding: 55px 35px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    background-image:
+        linear-gradient(
+            rgba(80, 10, 10, 0.72),
+            rgba(120, 25, 10, 0.72)
+        ),
+        url("disaster-bg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+.disaster-types::before {
+    display: none;
+}
+
+
+.disaster-types-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+
+.disaster-types h2 {
+    color: white;
+
+    font-size: 34px;
+
+    margin-bottom: 8px;
+}
+
+
+.disaster-types h2::after {
+    background-color: #ffb74d;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.disaster-types-content > p {
+    color: rgba(255, 255, 255, 0.9);
+
+    margin-bottom: 35px;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+18. THREE CIRCLES
+========================================================= */
+
+.disaster-circles {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 45px;
+
+    flex-wrap: wrap;
+}
+
+
+.disaster-circle {
+    width: 210px;
+    height: 210px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(183, 28, 28, 0.95),
+            rgba(142, 0, 0, 0.92)
+        );
+
+    border: 4px solid rgba(255, 255, 255, 0.35);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 25px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.disaster-circle:hover {
+    transform:
+        translateY(-8px)
+        scale(1.04);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(198, 40, 40, 0.98),
+            rgba(230, 81, 0, 0.95)
+        );
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.153);
+
+    cursor: pointer;
+}
+
+
+.circle-icon {
+    font-size: 38px;
+
+    margin-bottom: 5px;
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+.disaster-circle:hover .circle-icon {
+    transform: scale(1.12);
+}
+
+
+.disaster-circle h3 {
+    color: white;
+
+    font-size: 17px;
+
+    margin-bottom: 5px;
+}
+
+
+.disaster-circle p {
+    color: rgba(255, 255, 255, 0.88);
+
+    font-size: 13px;
+
+    line-height: 1.4;
+
+    margin: 0;
+
+    max-width: 145px;
+}
+
+
+/* =========================================================
+19. LISTS
+========================================================= */
+
+ul,
+ol {
+    padding-left: 25px;
+}
+
+
+li {
+    margin-bottom: 8px;
+}
+
+
+section ol li::marker {
+    color: #b71c1c;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+20. TEXT
+========================================================= */
+
+p {
+    margin-bottom: 12px;
+
+    color: #4d4d4d;
+}
+
+
+strong {
+    color: #b71c1c;
+}
+
+
+/* =========================================================
+21. FOOTER
+========================================================= */
+
+footer {
+    position: relative;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1b1b1b,
+            #292929
+        );
+
+    color: #ddd;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    margin-top: 30px;
+
+    overflow: hidden;
+}
+
+
+footer::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #b71c1c,
+            #e65100,
+            #ff9800
+        );
+}
+
+
+footer p {
+    color: #ddd;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+22. EMERGENCY BOX
+========================================================= */
+
+.emergency {
+    background:
+        linear-gradient(
+            135deg,
+            #fff1f1,
+            #fff8f3
+        );
+
+    border: 2px solid #ef5350;
+
+    border-left: 8px solid #d32f2f;
+
+    box-shadow:
+        0 8px 20px rgba(211, 47, 47, 0.12);
+}
+
+
+.emergency h2 {
+    color: #c62828;
+}
+
+
+.emergency a {
+    display: inline-block;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d32f2f,
+            #b71c1c
+        );
+
+    color: white;
+
+    padding: 13px 24px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    margin-top: 10px;
+
+    box-shadow:
+        0 5px 12px rgba(183, 28, 28, 0.25);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.emergency a:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 18px rgba(183, 28, 28, 0.35);
+}
+
+
+/* =========================================================
+23. PAGE TITLE
+========================================================= */
+
+.page-title {
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #b71c1c,
+            #e65100
+        );
+
+    color: white;
+
+    border-radius: 18px;
+
+    padding: 50px 30px;
+}
+
+
+.page-title::before {
+    display: none;
+}
+
+
+.page-title h2 {
+    color: white;
+
+    font-size: 38px;
+}
+
+
+.page-title h2::after {
+    background: white;
+}
+
+
+/* =========================================================
+24. IMAGES
+========================================================= */
+
+img {
+    max-width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    border-radius: 12px;
+}
+
+
+.card img {
+    margin-bottom: 15px;
+
+    transition:
+        transform 0.4s ease;
+}
+
+
+.card:hover img {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+25. HORIZONTAL LINE
+========================================================= */
+
+hr {
+    border: none;
+
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #e65100,
+            transparent
+        );
+
+    margin: 30px 0;
+}
+
+
+/* =========================================================
+26. TABLES
+========================================================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+
+th,
+td {
+    padding: 14px;
+
+    border: 1px solid #eee;
+
+    text-align: left;
+}
+
+
+th {
+    background:
+        linear-gradient(
+            135deg,
+            #b71c1c,
+            #d84315
+        );
+
+    color: white;
+}
+
+
+tr:nth-child(even) {
+    background-color: #fff8f5;
+}
+
+
+/* =========================================================
+27. LINKS
+========================================================= */
+
+a {
+    transition: all 0.2s ease;
+}
+
+
+/* =========================================================
+28. MOBILE - TABLETS
+========================================================= */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+
+        padding: 22px 20px;
+
+        text-align: center;
+    }
+
+
+    header h1 {
+        font-size: 23px;
+    }
+
+
+    nav {
+        width: 100%;
+    }
+
+
+    nav a {
+        font-size: 14px;
+    }
+
+
+    main {
+        padding: 35px 15px;
+    }
+
+
+    section {
+        padding: 25px;
+    }
+
+
+    .hero {
+        min-height: 440px;
+
+        padding: 65px 20px;
+    }
+
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+
+    .hero p {
+        font-size: 17px;
+    }
+
+
+    .hero-decorations span {
+        width: 55px;
+        height: 55px;
+
+        font-size: 25px;
+    }
+
+
+    .hero-decorations span:nth-child(1) {
+        left: 4%;
+    }
+
+
+    .hero-decorations span:nth-child(2) {
+        left: 5%;
+        bottom: 8%;
+    }
+
+
+    .hero-decorations span:nth-child(3) {
+        right: 4%;
+    }
+
+
+    .hero-decorations span:nth-child(4) {
+        right: 5%;
+        bottom: 10%;
+    }
+
+
+    .hero-decorations span:nth-child(5) {
+        display: none;
+    }
+
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .tips {
+        grid-template-columns: 1fr;
+    }
+
+
+    .checklist {
+        grid-template-columns: 1fr;
+    }
+
+
+    .page-title h2 {
+        font-size: 32px;
+    }
+
+
+    .disaster-types {
+        padding: 45px 20px;
+    }
+
+
+    .disaster-circles {
+        gap: 25px;
+    }
+
+
+    .disaster-circle {
+        width: 180px;
+        height: 180px;
+    }
+
+
+    .circle-icon {
+        font-size: 32px;
+    }
+
+}
+
+
+/* =========================================================
+29. MOBILE - SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 20px;
+    }
+
+
+    nav {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+
+    nav a {
+        width: 100%;
+
+        text-align: center;
+
+        border-radius: 8px;
+    }
+
+
+    main {
+        padding: 20px 10px;
+    }
+
+
+    section {
+        padding: 20px;
+
+        border-radius: 12px;
+    }
+
+
+    section h2 {
+        font-size: 24px;
+    }
+
+
+    .hero {
+        min-height: 430px;
+
+        padding: 50px 18px;
+
+        border-radius: 15px;
+    }
+
+
+    .hero h2 {
+        font-size: 29px;
+    }
+
+
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    .hero a {
+        padding: 11px 18px;
+    }
+
+
+    .hero-decorations span {
+        width: 45px;
+        height: 45px;
+
+        font-size: 21px;
+    }
+
+
+    .hero-decorations span:nth-child(2),
+    .hero-decorations span:nth-child(4) {
+        display: none;
+    }
+
+
+    .card {
+        padding: 22px;
+    }
+
+
+    .page-title {
+        padding: 40px 20px;
+    }
+
+
+    .page-title h2 {
+        font-size: 28px;
+    }
+
+
+    footer {
+        padding: 30px 15px;
+    }
+
+
+    .disaster-types {
+        padding: 40px 15px;
+    }
+
+
+    .disaster-types h2 {
+        font-size: 28px;
+    }
+
+
+    .disaster-circle {
+        width: 190px;
+        height: 190px;
+    }
+
+}
+
+
+/* =========================================================
+30. LONGER CARDS
+========================================================= */
+
+.Card {
+    position: relative;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #fafafa
+        );
+
+    border: 1px solid #e6e6e6;
+
+    border-radius: 16px;
+
+    padding: 28px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.07);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.Card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+    height: 90px;
+
+    border-radius: 50%;
+
+    background: rgba(230, 81, 0, 0.05);
+
+    right: -30px;
+    bottom: -30px;
+}
+
+
+.Card:hover {
+    transform: translateY(-8px);
+
+    border-color: #ffccbc;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+.Card h3 {
+    position: relative;
+
+    z-index: 2;
+
+    color: #b71c1c;
+
+    font-size: 21px;
+}
+
+
+.Card p,
+.Card h4 {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.Card a {
+    position: relative;
+
+    z-index: 3;
+
+    display: inline-block;
+
+    margin-top: 12px;
+
+    color: #d84315;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    border-bottom: 2px solid transparent;
+
+    transition:
+        border-color 0.2s ease;
+}
+
+
+.Card a:hover {
+    border-bottom-color: #d84315;
+}
+
+
+/* =========================================================
+31. FLOOD BACKGROUND
+========================================================= */
+
+.flood-disaster {
+    position: relative;
+
+    min-height: 500px;
+
+    padding: 55px 35px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    background-image:
+        linear-gradient(
+            rgba(131, 158, 192, 0.72),
+            rgba(60, 62, 202, 0.72)
+        ),
+        url("flood-bg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+.flood-disaster::before {
+    display: none;
+}
+
+
+.flood-disaster-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+
+.flood-disaster h2 {
+    color: white;
+
+    font-size: 34px;
+
+    margin-bottom: 8px;
+}
+
+
+.flood-disaster h2::after {
+    background-color: #b0b6db;
+
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+
+.flood-disaster-content > p {
+    color: rgba(255, 255, 255, 0.9);
+
+    margin-bottom: 35px;
+
+    font-size: 16px;
+}
+
+
+.flood-disaster p {
+    margin-bottom: 12px;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+32. STORMS
+========================================================= */
+
+.storm-disaster {
+    position: relative;
+
+    min-height: 500px;
+
+    padding: 55px 35px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    background-image:
+        linear-gradient(
+            rgba(81, 158, 104, 0.72),
+            rgba(30, 77, 42, 0.72)
+        ),
+        url("storm-bg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+.storm-disaster::before {
+    display: none;
+}
+
+
+.storm-disaster-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+
+.storm-disaster h2 {
+    color: white;
+
+    font-size: 34px;
+
+    margin-bottom: 8px;
+}
+
+
+.storm-disaster h2::after {
+    background-color: #ddffe7;
+
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+
+.storm-disaster-content > p {
+    color: rgba(255, 255, 255, 0.9);
+
+    margin-bottom: 35px;
+
+    font-size: 16px;
+}
+
+
+.storm-disaster p {
+    margin-bottom: 12px;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+33. DROUGHT
+========================================================= */
+
+.drought-disaster {
+    position: relative;
+
+    min-height: 500px;
+
+    padding: 55px 35px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    background-image:
+        linear-gradient(
+            rgba(107, 89, 61, 0.72),
+            rgba(122, 93, 14, 0.72)
+        ),
+        url("drought-bg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+.drought-disaster::before {
+    display: none;
+}
+
+
+.drought-disaster-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+
+.drought-disaster h2 {
+    color: white;
+
+    font-size: 34px;
+
+    margin-bottom: 8px;
+}
+
+
+.drought-disaster h2::after {
+    background-color: #5c5851;
+
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+
+.drought-disaster-content > p {
+    color: rgba(255, 255, 255, 0.9);
+
+    margin-bottom: 35px;
+
+    font-size: 16px;
+}
+
+
+.drought-disaster p {
+    margin-bottom: 12px;
+
+    color: #ffffff;
+}
+
+/* =========================================================
+   EMERGENCY CONTACTS TABLE
+========================================================= */
+
+.emergency-contacts {
+    background:
+        linear-gradient(
+            135deg,
+            #fff8f5,
+            #ffffff
+        );
+
+    border: 2px solid #ffcdd2;
+
+    box-shadow:
+        0 10px 28px rgba(183, 28, 28, 0.10);
+}
+
+
+.emergency-contacts h2 {
+    color: #b71c1c;
+}
+
+
+.emergency-contacts > p {
+    margin-bottom: 25px;
+}
+
+
+/* Table wrapper */
+
+.table-container {
+    width: 100%;
+
+    overflow-x: auto;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Table */
+
+.emergency-contacts table {
+    width: 100%;
+
+    min-width: 650px;
+
+    border-collapse: collapse;
+
+    margin: 0;
+
+    background: white;
+
+    box-shadow: none;
+
+    border-radius: 0;
+}
+
+
+/* Table header */
+
+.emergency-contacts th {
+    padding: 16px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #8e0000,
+            #c62828,
+            #e65100
+        );
+
+    color: white;
+
+    text-align: left;
+
+    font-size: 15px;
+
+    border: none;
+}
+
+
+/* Table cells */
+
+.emergency-contacts td {
+    padding: 16px;
+
+    border: 1px solid #eeeeee;
+
+    color: #444;
+
+    vertical-align: middle;
+}
+
+
+/* Number column */
+
+.emergency-contacts td strong {
+    display: inline-block;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d32f2f,
+            #b71c1c
+        );
+
+    padding: 6px 13px;
+
+    border-radius: 20px;
+
+    font-size: 17px;
+
+    letter-spacing: 0.5px;
+
+    box-shadow:
+        0 3px 8px rgba(183, 28, 28, 0.2);
+}
+
+
+/* Alternating rows */
+
+.emergency-contacts tbody tr:nth-child(even) {
+    background-color: #fff8f5;
+}
+
+
+.emergency-contacts tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+
+/* Hover */
+
+.emergency-contacts tbody tr {
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.emergency-contacts tbody tr:hover {
+    background-color: #ffebee;
+
+    transform: scale(1.005);
+}
+
+
+/* =========================================================
+   EMERGENCY WARNING
+========================================================= */
+
+.emergency-contacts::after {
+    content:
+        "⚠️ In a life-threatening emergency, contact the appropriate emergency service immediately.";
+
+    display: block;
+
+    margin-top: 25px;
+
+    padding: 15px 18px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffebee,
+            #fff3e0
+        );
+
+    border-left: 6px solid #d32f2f;
+
+    border-radius: 8px;
+
+    color: #8e0000;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   MOBILE EMERGENCY TABLE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .emergency-contacts {
+        padding: 25px;
+    }
+
+
+    .emergency-contacts h2 {
+        font-size: 25px;
+    }
+
+
+    .emergency-contacts th,
+    .emergency-contacts td {
+        padding: 13px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .emergency-contacts {
+        padding: 20px;
+    }
+
+
+    .emergency-contacts h2 {
+        font-size: 23px;
+    }
+
+
+    .emergency-contacts > p {
+        font-size: 14px;
+    }
+
+
+    .emergency-contacts td strong {
+        font-size: 15px;
+
+        padding: 5px 10px;
+    }
+
+}
+
+/* =========================================================
+   ABOUT US PAGE
+========================================================= */
+
+
+/* =========================================================
+   ABOUT SECTION
+========================================================= */
+
+.about-section {
+    position: relative;
+}
+
+
+/* =========================================================
+   MISSION SECTION
+========================================================= */
+
+.mission-section {
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff8f5,
+            #ffffff
+        );
+
+    border-left: 7px solid #e65100;
+}
+
+
+.about-icon {
+    min-width: 100px;
+    height: 100px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #b71c1c,
+            #e65100
+        );
+
+    font-size: 48px;
+
+    box-shadow:
+        0 8px 20px rgba(183, 28, 28, 0.2);
+}
+
+
+/* =========================================================
+   ABOUT CARDS
+========================================================= */
+
+.about-cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-top: 25px;
+}
+
+
+.about-card {
+    position: relative;
+
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #fafafa
+        );
+
+    border: 1px solid #e6e6e6;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.07);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.about-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 5px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #b71c1c,
+            #e65100,
+            #ff9800
+        );
+}
+
+
+.about-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #ffccbc;
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+
+.about-card-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffebee,
+            #fff3e0
+        );
+
+    font-size: 32px;
+
+    margin-bottom: 18px;
+}
+
+
+.about-card h3 {
+    color: #b71c1c;
+
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+
+.about-card p {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   PREPAREDNESS HIGHLIGHT
+========================================================= */
+
+.about-highlight {
+    background:
+        linear-gradient(
+            135deg,
+            #7f0000,
+            #b71c1c 50%,
+            #e65100
+        );
+
+    color: white;
+
+    text-align: center;
+}
+
+
+.about-highlight::before {
+    display: none;
+}
+
+
+.about-highlight h2 {
+    color: white;
+}
+
+
+.about-highlight h2::after {
+    background: #ffcc80;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.about-highlight > p {
+    max-width: 750px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    color: rgba(255, 255, 255, 0.92);
+}
+
+
+/* =========================================================
+   PREPAREDNESS POINTS
+========================================================= */
+
+.preparedness-points {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-top: 35px;
+}
+
+
+.preparedness-points > div {
+    padding: 20px;
+
+    background:
+        rgba(255, 255, 255, 0.10);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.18);
+
+    border-radius: 14px;
+
+    backdrop-filter: blur(4px);
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+
+.preparedness-points > div:hover {
+    transform: translateY(-6px);
+
+    background:
+        rgba(255, 255, 255, 0.16);
+}
+
+
+.preparedness-points span {
+    display: flex;
+
+    width: 45px;
+    height: 45px;
+
+    margin: 0 auto 12px;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #b71c1c;
+
+    font-weight: bold;
+
+    font-size: 19px;
+}
+
+
+.preparedness-points h3 {
+    color: white;
+
+    margin-bottom: 7px;
+
+    font-size: 17px;
+}
+
+
+.preparedness-points p {
+    color:
+        rgba(255, 255, 255, 0.85);
+
+    font-size: 14px;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   GOAL SECTION
+========================================================= */
+
+/* =========================================================
+   GOAL SECTION
+========================================================= */
+
+.goal-section {
+    text-align: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fff8f5,
+            #ffffff
+        );
+}
+
+
+
+/* Center the line underneath "Our Goal" */
+
+.goal-section h2::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.goal-section p {
+    max-width: 750px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.goal-section a {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d32f2f,
+            #b71c1c
+        );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 5px 15px rgba(183, 28, 28, 0.22);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.goal-section a:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 9px 22px rgba(183, 28, 28, 0.3);
+}
+
+
+/* =========================================================
+   ACTIVE NAVIGATION
+========================================================= */
+
+nav a.active {
+    background-color:
+        rgba(255, 255, 255, 0.20);
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   ABOUT PAGE - TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .preparedness-points {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .mission-section {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================================
+   ABOUT PAGE - SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .preparedness-points {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-icon {
+        width: 80px;
+        height: 80px;
+
+        min-width: 80px;
+
+        font-size: 38px;
+    }
+
+
+    .about-card {
+        padding: 23px;
+    }
+
+
+    .about-highlight {
+        padding: 25px 20px;
+    }
+
+}
