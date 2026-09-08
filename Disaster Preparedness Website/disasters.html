@@ -343,6 +343,46 @@
 
                 <h4>What to Do</h4>
 
+                                <!-- Interactive Earthquake Magnitude Slider -->
+                <div class="earthquake-slider">
+                    <h4>Earthquake Magnitude</h4>
+
+                    <div class="magnitude-display">
+                        <span id="magnitudeValue">1</span>
+                        <span class="magnitude-label">Magnitude</span>
+                    </div>
+
+                    <input
+                        type="range"
+                        id="magnitudeSlider"
+                        min="1"
+                        max="10"
+                        value="5"
+                        step="1"
+                    >
+
+                    <div class="magnitude-scale">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                    </div>
+
+                    <div class="magnitude-info">
+                        <h4 id="magnitudeName">Moderate</h4>
+
+                        <p id="magnitudeDescription">
+                            Usually felt by people and can cause minor damage
+                            to poorly built structures.
+                        </p>
+                    </div>
+                </div>
                 <p>
                     Drop, Cover, and Hold On.
                 </p>
@@ -433,5 +473,104 @@
     </footer>
 
 </body>
+<script>
+    const magnitudeSlider =
+        document.getElementById("magnitudeSlider");
+
+    const magnitudeValue =
+        document.getElementById("magnitudeValue");
+
+    const magnitudeName =
+        document.getElementById("magnitudeName");
+
+    const magnitudeDescription =
+        document.getElementById("magnitudeDescription");
+
+
+    const magnitudeLevels = {
+
+        1: {
+            name: "Micro",
+            description:
+                "Usually not felt by people, but detected by sensitive instruments. These earthquakes normally cause no damage."
+        },
+
+        2: {
+            name: "Minor",
+            description:
+                "Usually not felt by most people, though a few people may notice slight shaking."
+        },
+
+        3: {
+            name: "Minor",
+            description:
+                "Often felt indoors, especially by people on upper floors of buildings. Damage is generally not expected."
+        },
+
+        4: {
+            name: "Light",
+            description:
+                "Noticeable shaking that may rattle windows and dishes and cause minor disturbance."
+        },
+
+        5: {
+            name: "Moderate",
+            description:
+                "Usually felt by people and can cause minor damage to poorly built structures."
+        },
+
+        6: {
+            name: "Strong",
+            description:
+                "Can cause moderate damage in populated areas and may damage vulnerable buildings."
+        },
+
+        7: {
+            name: "Major",
+            description:
+                "Can cause serious damage over a large area, especially to weak or older structures."
+        },
+
+        8: {
+            name: "Great",
+            description:
+                "Can cause severe, widespread damage and major disruption across a very large region."
+        },
+
+        9: {
+            name: "Very Great",
+            description:
+                "Can cause devastating damage over extremely large areas, including major infrastructure failures."
+        },
+
+        10: {
+            name: "Extreme",
+            description:
+                "An exceptionally powerful earthquake capable of catastrophic, widespread destruction."
+        }
+
+    };
+
+
+    function updateMagnitude() {
+
+        const value = magnitudeSlider.value;
+        const level = magnitudeLevels[value];
+
+        magnitudeValue.textContent = value;
+        magnitudeName.textContent = level.name;
+        magnitudeDescription.textContent =
+            level.description;
+
+    }
+
+
+    magnitudeSlider.addEventListener(
+        "input",
+        updateMagnitude
+    );
+
+    updateMagnitude();
+</script>
 
 </html>
