@@ -594,7 +594,7 @@ section > a:hover {
     box-shadow:
         0 9px 20px rgba(0, 0, 0, 0.25);
 
-    background: white;
+    background: rgb(255, 255, 255);
 }
 
 
@@ -1116,6 +1116,27 @@ section > a:hover {
     color: #a0522d;
 }
 
+.community-card {
+    border-top: 6px solid #0c6900;
+
+    background:
+        linear-gradient(
+            145deg,
+            #e5ffe3,
+            #ebffeb
+        );
+}
+
+
+.community-card h3 {
+    color: #0c6900;
+}
+
+
+.community-card h4 {
+    color: #0c6900;
+}
+
 
 /* =========================================================
 16. DISASTER CARD ALARM
@@ -1553,6 +1574,8 @@ footer p {
 
     box-shadow:
         0 8px 18px rgba(183, 28, 28, 0.35);
+
+    color: rgb(194, 108, 108)
 }
 
 
@@ -2083,6 +2106,7 @@ a {
             rgba(60, 62, 202, 0.72)
         ),
         url("flood-bg.jpg");
+        box-shadow: 5px 8px 5px rgba(200, 255, 200, 0.6);
 
     background-size: cover;
 
@@ -2172,6 +2196,7 @@ a {
             rgba(30, 77, 42, 0.72)
         ),
         url("storm-bg.jpg");
+        box-shadow: 5px 8px 5px rgba(119, 171, 187,0.6);
 
     background-size: cover;
 
@@ -2261,6 +2286,7 @@ a {
             rgba(122, 93, 14, 0.72)
         ),
         url("drought-bg.jpg");
+        box-shadow: 5px 8px 5px rgba(180, 120, 196, 0.6);
 
     background-size: cover;
 
@@ -2915,14 +2941,15 @@ a {
 
     border-radius: 30px;
 
-    background:
-        linear-gradient(
+    background: #ffffff;
+
+    outline: red;
+
+    color:         linear-gradient(
             135deg,
             #d32f2f,
             #b71c1c
         );
-
-    color: white;
 
     text-decoration: none;
 
@@ -2937,12 +2964,6 @@ a {
 }
 
 
-.goal-section a:hover {
-    transform: translateY(-4px);
-
-    box-shadow:
-        0 9px 22px rgba(183, 28, 28, 0.3);
-}
 
 
 /* =========================================================
@@ -3020,3 +3041,38 @@ nav a.active {
     }
 
 }
+
+/*tips*/
+
+nav a.active {
+    background-color: rgba(255, 255, 255, 0.28);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.page-title p {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.tips {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    border: none;
+}
+
+.card p strong {
+    color: #b71c1c;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .tips {
+        grid-template-columns: 1fr;
+    }
+}
+
